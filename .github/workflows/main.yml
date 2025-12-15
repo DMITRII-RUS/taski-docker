@@ -131,7 +131,8 @@ jobs:
           context: ./frontend/
           push: true
           tags: dmitrychistyakovv/taski_frontend:latest
-    build_gateway_and_push_to_docker_hub:
+  # Добавляем workflow для Nginx
+  build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
     runs-on: ubuntu-latest
     steps:
